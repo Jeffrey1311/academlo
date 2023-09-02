@@ -1,0 +1,254 @@
+:root {
+    /*primary colors*/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /*neutral colors*/
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --very-pale-blue1:hsl(231, 100%, 96%);
+    
+
+    /*typography*/
+    --body-font: 'Red Hat Display', sans-serif;
+
+    /* Font Weights */
+    --font-md: 500;
+    --font-lg: 700;
+    --font-xl: 900;
+}
+
+/* Resetting the format page */
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background: var(--desaturated-blue);
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+/* Nuevas reglas de estilo */
+
+.box-content {
+    display: grid;
+    min-width: 375px;
+    border: 1px solid var(--light-gray);
+    border-radius: 20px;
+    background: var(--white);
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: var(--very-pale-blue);
+}
+
+.img-content img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin-top: -20px;
+}
+
+
+.summary h2 {
+    color: var(--dark-blue);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: var(--font-xl);
+}
+
+.p-content .p-first-paragraph {
+    color: var(--desaturated-blue);
+    text-align: center;
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: var(--font-md);
+}
+
+.p-content .p-seconds-paragraph {
+    color: var(--desaturated-blue);
+    text-align: center;
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: var(--font-md);
+}
+
+/* Alineación del título y color del fondo */
+.summary__tittle {
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+/* Color del párrafo */
+.summary__text {
+    color: var(--desaturated-blue);
+    text-align: center;
+}
+
+/* Alineación del enlace "Change" a la derecha */
+.change-span {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+/* Estilos para la caja que contiene el "Annual Plan", precio total y "Change" */
+.plan-container {
+    background-color: var(--very-pale-blue1);
+    padding: 0rem;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: auto;
+    height: auto;
+    margin-top: 1px;
+}
+
+/* image container */
+.plan-container .plan-container__img {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 5px;
+    margin-bottom: 1rem;
+}
+
+.plan-container__img {
+    position: relative;
+  }
+  
+  .annual-plan__name {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-90%);
+    margin-top: 0px;
+    background-color: white;
+    padding: 0px 0px;
+    border-radius: 5px;
+  }
+  
+  .annual-plan__price {
+    position: absolute;
+    top: 10px; /* Ajusta este valor según tu diseño */
+    left: 50%;
+    transform: translateX(-92%);
+  }
+  
+
+
+/* Alineación del enlace "Change" a la derecha */
+.change-span {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Estilos existentes y reglas previas */
+
+/* Estilos para la caja que contiene todo */
+.summary-box {
+    background-color: var(--pale-blue);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-container .annual-plan__price {
+    margin-top: 0.5rem;
+}
+
+/* Estilos para el botón "Proceed to Payment" */
+.proceed-button {
+    background-color: var(--bright-blue); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 10px; /* Añade bordes redondeados al botón */
+    padding: 8px 12px; /* Espacio interno más pequeño para reducir la anchura del fondo */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, color 0.3s; /* Agrega transiciones suaves al color de fondo y al color del texto */
+    margin-top: 20px; /* Espacio superior para separar el botón de otros elementos */
+}
+
+
+.proceed-button:hover {
+    background-color: var(--dark-blue); /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+/* Estilos para el botón "Cancel Order" */
+.cancel-button {
+    background-color: var(--dark---very-pale-blue); /* Color de fondo del botón */
+    color: var(--desaturated-blue); /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 10px; /* Añade bordes redondeados al botón */
+    padding: 8px 16px; /* Espacio interno más pequeño para reducir el tamaño del fondo */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, color 0.3s; /* Agrega transiciones suaves al color de fondo y al color del texto */
+    margin-top: 10px; /* Espacio superior para separar el botón de otros elementos */
+}
+
+/* Estilos generales */
+
+/* Estilos para dispositivos con un ancho máximo de 1440px */
+@media (max-width: 1440px) {
+    body {
+        font-size: 14px; /* Reduzco el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .box-content {
+        width: 90%; /* Reduzco el ancho del contenedor principal */
+        max-width: 400px; /* Establezco un ancho máximo para el contenedor */
+        margin-top: 50px; /* Ajusto el margen superior */
+    }
+
+    .summary__button {
+        padding: 8px 12px; /* Reduzco el espacio interno del botón */
+    }
+
+    /* Otros ajustes de estilo según tus necesidades */
+}
+
+
+
+
+
+
+
+
+
